@@ -3,3 +3,39 @@
   margin: 0;
   padding: 0;
 }
+/* COLOUR */
+/* /COLOUR */
+
+/* MIX */
+.d_flex {
+  display: flex;
+}
+/* /MIX */
+
+/* MAIN */
+
+main {
+  background-color: red;
+  height: calc(100vh - 80px);
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #000;
+  width: 300px;
+  height: 100%;
+}
+
+/* Contenuto principale */
+.main_content {
+  background-color: #141922;
+  width: calc(100% - 300px);
+  height: 100%;
+}
+
+/* /MAIN */
+
+footer {
+  background-color: #282828;
+  height: 80px;
+}
