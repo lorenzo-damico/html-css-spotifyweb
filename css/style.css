@@ -99,7 +99,7 @@ main {
   overflow-y: auto;
 }
 .sidebar .playlist_list li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 /* Sidebar bottom */
 .sidebar .sidebar_bottom {
