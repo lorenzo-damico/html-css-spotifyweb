@@ -22,6 +22,15 @@ p {
 .align_middle {
   vertical-align: middle;
 }
+.list_unstyle {
+  list-style: none;
+}
+.m_top_20 {
+  margin-top: 20px;
+}
+.text_uppercase {
+  text-transform: uppercase;
+}
 /* /MIX */
 
 /* MAIN */
@@ -31,24 +40,54 @@ main {
   height: calc(100vh - 80px);
 }
 
-/* Sidebar */
+/* SIDEBAR */
+
 .sidebar {
   background-color: #000;
   width: 250px;
   height: 100%;
-  padding: 20px;
+  padding: 20px 20px 0;
+  flex-direction: column;
 }
-.logo {
+
+/* Logo */
+.sidebar .logo {
   font-size: 30px;
 }
-.logo i {
+.sidebar .logo i {
   font-size: 40px;
 }
-.registered {
+.sidebar .logo .registered {
   font-size: 5px;
   vertical-align: super;
 }
-/* Contenuto principale */
+
+/* Main menu */
+.sidebar .main_menu {
+}
+.sidebar .main_menu i {
+  font-size: 25px;
+}
+
+/* Playlist menu */
+.sidebar .playlist_menu {
+  background-color: red;
+}
+.sidebar .playlist_menu i {
+  font-size: 40px;
+}
+.sidebar .playlist_list {
+}
+.sidebar .playlist_list li {
+}
+/* Sidebar bottom */
+.sidebar .sidebar_bottom {
+  margin-top: auto;
+}
+
+/* /SIDEBAR */
+
+/* CONTENUTO PRINCIPALE */
 .main_content {
   background-color: #141922;
   width: calc(100% - 250px);
@@ -67,12 +106,18 @@ main {
   align-items: center;
   padding-right: 50px;
 }
+/* /CONTENUTO PRINCIPALE */
+
 /* /MAIN */
 
+/* FOOTER */
 footer {
   background-color: #282828;
   height: 80px;
+  position: relative;
+  z-index: 1;
 }
+/* /FOOTER */
 
 /* RESPONSIVE */
 
@@ -87,7 +132,7 @@ footer {
     padding: 0 10px;
   }
 
-  .logo i {
+  .sidebar .logo i {
     font-size: 30px;
   }
 
