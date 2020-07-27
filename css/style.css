@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
+
+p {
+  color: #fff;
+}
 /* COLOUR */
 /* /COLOUR */
 
@@ -22,20 +26,45 @@ main {
 /* Sidebar */
 .sidebar {
   background-color: #000;
-  width: 300px;
+  width: 250px;
   height: 100%;
 }
 
 /* Contenuto principale */
 .main_content {
   background-color: #141922;
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   height: 100%;
+  overflow-y: auto;
+  padding-top: 80px;
 }
-
+.topbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: calc(100% - 250px);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+}
 /* /MAIN */
 
 footer {
   background-color: #282828;
   height: 80px;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 50px;
+  }
+
+  .main_content, .topbar {
+    width: calc(100% - 50px)
+  }
+}
+/* /RESPONSIVE */
