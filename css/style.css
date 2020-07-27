@@ -3,16 +3,24 @@
   margin: 0;
   padding: 0;
 }
-
+/* TYPO */
 p {
   color: #fff;
 }
+/* /TYPO */
+
 /* COLOUR */
+.text_white  {
+  color: #fff;
+}
 /* /COLOUR */
 
 /* MIX */
 .d_flex {
   display: flex;
+}
+.align_middle {
+  vertical-align: middle;
 }
 /* /MIX */
 
@@ -28,8 +36,18 @@ main {
   background-color: #000;
   width: 250px;
   height: 100%;
+  padding: 20px;
 }
-
+.logo {
+  font-size: 30px;
+}
+.logo i {
+  font-size: 40px;
+}
+.registered {
+  font-size: 5px;
+  vertical-align: super;
+}
 /* Contenuto principale */
 .main_content {
   background-color: #141922;
@@ -59,8 +77,18 @@ footer {
 /* RESPONSIVE */
 
 @media screen and (max-width: 767px) {
+
+  .hidden_xs {
+    display: none;
+  }
+
   .sidebar {
     width: 50px;
+    padding: 0 10px;
+  }
+
+  .logo i {
+    font-size: 30px;
   }
 
   .main_content, .topbar {
