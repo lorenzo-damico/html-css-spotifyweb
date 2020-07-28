@@ -320,6 +320,25 @@ footer a i:hover {
   width: 20%;
   border: 2px solid lightgrey;
   border-radius: 2px;
+  position: relative;
+}
+.player_main__reproduced::after {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  display: none;
+  right: -5px;
+  top: -7px;
+}
+.player_main__bar:hover .player_main__reproduced::after {
+  display: block;
+}
+.player_main__bar:hover .player_main__reproduced {
+  border: 2px solid lightgreen;
+}
+.player_main__bar:hover {
+  cursor: pointer;
 }
 /* Player secondary */
 .player_secondary {
@@ -338,20 +357,42 @@ footer a i:hover {
   width: 30%;
   border: 2px solid lightgrey;
   border-radius: 2px;
+  position: relative;
+}
+.player_secondary__reproduced_audio::after {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  display: none;
+  right: -5px;
+  top: -7px;
+}
+.player_secondary__audio:hover .player_secondary__reproduced_audio::after {
+  display: block;
+}
+.player_secondary__audio:hover .player_secondary__reproduced_audio {
+  border: 2px solid lightgreen;
+}
+.player_secondary__audio:hover {
+  cursor: pointer;
 }
 /* /FOOTER */
 
 /* RESPONSIVE */
+
 @media screen and (max-width: 991px) {
   .music_container__list li {
     width: calc(100% / 4);
   }
 }
+
 @media screen and (max-width: 767px) {
   .music_container__list li {
     width: calc(100% / 2);
   }
 }
+
 @media screen and (max-width: 600px) {
 
   .hidden_xs {
@@ -361,6 +402,7 @@ footer a i:hover {
   .main_menu {
     margin-top: 10px;
   }
+
   .sidebar {
     width: 50px;
     padding: 5px 0;
@@ -380,9 +422,11 @@ footer a i:hover {
   .visible_xs {
     display: none;
   }
+
   .pl_20 {
     padding-left: 20px;
   }
+
   .selected {
     border-left: 4px solid lightgreen;
     padding-left: 16px;
