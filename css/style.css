@@ -14,8 +14,8 @@ body {
   font-size: 12px;
   font-weight: 600;
 }
-p {
-  color: #fff;
+h2 {
+  padding-left: 10px;
 }
 
 a {
@@ -207,15 +207,15 @@ main {
 }
 
 /* Recently played */
-.recently_played h3 {
+.music_container h3 {
   color: #fff;
   margin: 10px 0;
 }
-.recently_played__list {
+.music_container__list {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.recently_played__list li {
+.music_container__list li {
   width: calc(100% / 6);
   margin-bottom: 10px;
 }
@@ -242,7 +242,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.recently_played__list > li:hover .overlay {
+.music_container__list > li:hover .overlay {
   display: block;
 }
 /* /CONTENUTO PRINCIPALE */
@@ -328,12 +328,12 @@ footer a {
 
 /* RESPONSIVE */
 @media screen and (max-width: 991px) {
-  .recently_played__list li {
+  .music_container__list li {
     width: calc(100% / 4);
   }
 }
 @media screen and (max-width: 767px) {
-  .recently_played__list li {
+  .music_container__list li {
     width: calc(100% / 2);
   }
 }
