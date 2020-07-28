@@ -190,7 +190,7 @@ main {
 
 /* Content menu */
 .content_menu {
-  width: 85%;
+  width: 95%;
   margin: auto;
 }
 .content_menu a {
@@ -215,7 +215,7 @@ main {
   border-radius: 1px;
 }
 
-/* Recently played */
+/* Music container */
 .music_container h3 {
   color: #fff;
   margin: 10px 0;
@@ -237,7 +237,7 @@ main {
 .img_wrapper .overlay {
   display: none;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 3px);
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
