@@ -271,6 +271,9 @@ footer {
 footer a {
   color: #fff;
 }
+footer a i:hover {
+  color: #fff;
+}
 
 /* Current song */
 .current_song {
@@ -300,6 +303,9 @@ footer a {
 }
 .player_main__control .fa-play-circle {
   font-size: 30px;
+}
+.player_main__control .fa-play-circle:hover {
+  transform: scale(1.1);
 }
 .player_main__timer span {
   font-size: 8px;
