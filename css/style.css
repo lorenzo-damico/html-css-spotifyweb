@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-/* .debug li {
-  background-color: pink;
-  border: 1px solid black;
-} */
 /* TYPO */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -147,6 +143,7 @@ main {
   height: calc(100% - 110px);
   overflow-y: auto;
 }
+
 /* Sidebar bottom */
 .sidebar .sidebar_bottom {
   margin-top: auto;
@@ -159,9 +156,11 @@ main {
   border-radius: 100%;
   height: 25px;
 }
+
 /* /SIDEBAR */
 
 /* CONTENUTO PRINCIPALE */
+
 .main_content {
   background-color: #141922;
   width: calc(100% - 250px);
@@ -169,6 +168,7 @@ main {
   overflow-y: auto;
   padding: 80px 20px 10px;
 }
+
 /* Topbar */
 .topbar {
   background-color: rgba(0, 0, 0, 0.5);
@@ -332,8 +332,8 @@ footer a i:hover {
   font-weight: 900;
   position: absolute;
   display: none;
-  right: -5px;
-  top: -7px;
+  right: -6px;
+  transform: translatey(-50%);
 }
 .player_main__bar:hover .player_main__reproduced::after {
   display: block;
@@ -369,8 +369,8 @@ footer a i:hover {
   font-weight: 900;
   position: absolute;
   display: none;
-  right: -5px;
-  top: -7px;
+  right: -6px;
+  transform: translatey(-50%);
 }
 .player_secondary__audio:hover .player_secondary__reproduced_audio::after {
   display: block;

@@ -83,7 +83,7 @@
         <!-- RECENTLY PLAYED -->
         <div class="music_container">
           <h2 class="text_white mt_20 mb_20">Recently played</h2>
-          <ul class="debug music_container__list list_inline text_center">
+          <ul class="music_container__list list_inline text_center">
             <li>
               <a href="#">
                 <div class="img_wrapper">
@@ -164,7 +164,7 @@
         <div class="music_container">
           <h2 class="text_white mt_20 mb_10">Creato per John Doe</h2>
           <p class="text_grey mb_20">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
-          <ul class="debug music_container__list list_inline text_center">
+          <ul class="music_container__list list_inline text_center">
             <li>
               <a href="#">
                 <div class="img_wrapper">
@@ -195,7 +195,7 @@
         <div class="music_container">
           <h2 class="text_white mt_20 mb_10">Artisti pi&ugrave; popolari</h2>
           <p class="text_grey mb_20">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
-          <ul class="debug music_container__list list_inline text_center">
+          <ul class="music_container__list list_inline text_center">
             <li>
               <a href="#">
                 <div class="img_wrapper b_radius_100 overflow_hidden">
@@ -228,7 +228,8 @@
 
     <!-- FOOTER -->
     <footer class="d_flex">
-      <div class="box current_song">
+      <!-- CURRENT SONG -->
+      <div class="current_song">
         <img class="v_align_middle mr_5" src="img/sinister.jpeg" alt="sinister small">
         <div class="v_align_middle current_song__title inline_block text_white mr_5">
           <h4>Sinister</h4>
@@ -239,7 +240,10 @@
           <a href="#"><i class="far fa-folder text_grey"></i></a>
         </div>
       </div>
-      <div class="box player_main text_center">
+      <!-- /CURRENT SONG -->
+
+      <!-- PLAYER MAIN -->
+      <div class="player_main text_center">
         <div class="player_main__control">
           <a href="#"><i class="fas fa-random"></i></a>
           <a href="#"><i class="fas fa-step-backward"></i></a>
@@ -255,7 +259,10 @@
           <span>4:35</span>
         </div>
       </div>
-      <div class="box player_secondary text_right text_white">
+      <!-- /PLAYER MAIN -->
+
+      <!-- PLAYER SECONDARY -->
+      <div class="player_secondary text_right text_white">
         <a href="#"><i class="fas fa-list"></i></a>
         <a href="#"><i class="fas fa-desktop"></i></a>
         <a href="#"><i class="fas fa-volume-up"></i></a>
@@ -263,6 +270,7 @@
           <div class="player_secondary__reproduced_audio"></div>
         </div>
       </div>
+      <!-- /PLAYER SECONDARY -->
     </footer>
     <!-- /FOOTER -->
   </body>
