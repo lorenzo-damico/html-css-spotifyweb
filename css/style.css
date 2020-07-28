@@ -15,9 +15,12 @@ body {
   font-weight: 600;
 }
 h2 {
+  font-size: 22px;
   padding-left: 10px;
 }
-
+p {
+  padding-left: 10px;
+}
 a {
   text-decoration: none;
 
