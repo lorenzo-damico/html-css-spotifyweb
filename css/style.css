@@ -84,6 +84,12 @@ a {
 .text_uppercase {
   text-transform: uppercase;
 }
+.b_radius_100 {
+  border-radius: 100%;
+}
+.overflow_hidden {
+  overflow: hidden;
+}
 /* /MIX */
 
 /* MAIN */
