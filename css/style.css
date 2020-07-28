@@ -184,7 +184,7 @@ footer {
   .pl_20 {
     padding-left: 20px;
   }
-  .sidebar .main_menu .home {
+  .selected {
     border-left: 4px solid lightgreen;
   }
 }
