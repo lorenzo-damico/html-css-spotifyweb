@@ -26,11 +26,17 @@ a:hover {
 .text_white  {
   color: #fff;
 }
+.text_grey {
+  color: #A3A3A3;
+}
 /* /COLOUR */
 
 /* MIX */
 .d_flex {
   display: flex;
+}
+.inline_block {
+  display: inline-block;
 }
 .v_align_middle {
   vertical-align: middle;
@@ -50,13 +56,15 @@ a:hover {
 .mr_5 {
   margin-right: 5px;
 }
+.mr_20 {
+  margin-right: 20px;
+}
 .mb_20 {
   margin-bottom: 20px;
 }
 .mb_10 {
   margin-bottom: 10px;
 }
-
 .text_uppercase {
   text-transform: uppercase;
 }
@@ -158,7 +166,66 @@ footer {
   height: 80px;
   position: relative;
   z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 }
+footer a {
+  color: #fff;
+}
+.box  {
+  background-color: pink;
+  border: 1px solid black;
+}
+
+/* Current song */
+.current_song {
+  width: 30%;
+}
+.current_song img {
+  width: 20%;
+  max-width: 50px;
+}
+.current_song__title {
+  width: 40%;
+  max-width: 130px;
+}
+.current_song__icon {
+  width: 20%;
+  font-size: 15px;
+}
+
+/* Player main */
+.player_main {
+  width: 40%;
+}
+.player_main__control i {
+  font-size: 18px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.player_main__control .fa-play-circle {
+  font-size: 30px;
+}
+.player_main__timer span {
+  font-size: 8px;
+}
+.player_main__bar {
+  width: 60%;
+  margin: 10px;
+  border-radius: 2px;
+  background-color: #A3A3A3;
+}
+.player_main__reproduced {
+  width: 20%;
+  border: 2px solid lightgrey;
+  border-radius: 2px;
+}
+/* Player secondary */
+.player_secondary  {
+  width: 30%;
+}
+
 /* /FOOTER */
 
 /* RESPONSIVE */
