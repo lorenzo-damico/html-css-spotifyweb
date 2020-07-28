@@ -18,12 +18,14 @@ h2 {
   font-size: 22px;
   padding-left: 10px;
 }
+h3 {
+  font-size: 15px;
+}
 p {
   padding-left: 10px;
 }
 a {
   text-decoration: none;
-
 }
 
 /* /TYPO */
