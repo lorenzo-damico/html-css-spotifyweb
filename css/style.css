@@ -127,6 +127,7 @@ main {
   overflow-y: auto;
   padding-top: 80px;
 }
+/* Topbar */
 .topbar {
   background-color: rgba(0, 0, 0, 0.5);
   width: calc(100% - 250px);
@@ -136,7 +137,16 @@ main {
   right: 0;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 50px;
+  padding-right: 25px;
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+.btn:hover {
+  transform: scale(1.05);
 }
 /* /CONTENUTO PRINCIPALE */
 
@@ -186,6 +196,7 @@ footer {
   }
   .selected {
     border-left: 4px solid lightgreen;
+    padding-left: 16px;
   }
 }
 /* /RESPONSIVE */
