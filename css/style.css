@@ -27,7 +27,6 @@ p {
 a {
   text-decoration: none;
 }
-
 /* /TYPO */
 
 /* COLOUR */
@@ -86,6 +85,9 @@ a {
 .mb_10 {
   margin-bottom: 10px;
 }
+.ml_5 {
+  margin-left: 5px;
+}
 .text_uppercase {
   text-transform: uppercase;
 }
@@ -109,7 +111,7 @@ main {
   background-color: #000;
   width: 250px;
   height: 100%;
-  padding: 20px 0 5px;
+  padding: 20px 0 5px ;
   flex-direction: column;
   overflow: hidden;
 }
