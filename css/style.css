@@ -279,7 +279,33 @@ footer a {
 footer a i:hover {
   color: #fff;
 }
-
+.ext_bar {
+  border-radius: 2px;
+  background-color: #5A5A5A;
+}
+.int_bar {
+  border: 2px solid lightgrey;
+  border-radius: 2px;
+  position: relative;
+}
+.int_bar::after {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  display: none;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+.ext_bar:hover .int_bar::after {
+  display: block;
+}
+.ext_bar:hover .int_bar {
+  border: 2px solid lightgreen;
+}
+.ext_bar:hover {
+  cursor: pointer;
+}
 /* Current song */
 .current_song {
   width: 30%;
@@ -315,35 +341,12 @@ footer a i:hover {
 .player_main__timer span {
   font-size: 8px;
 }
-.player_main__bar {
+.player_main .ext_bar {
   width: 60%;
   margin: 10px;
-  border-radius: 2px;
-  background-color: #5A5A5A;
 }
-.player_main__reproduced {
+.player_main .int_bar {
   width: 20%;
-  border: 2px solid lightgrey;
-  border-radius: 2px;
-  position: relative;
-}
-.player_main__reproduced::after {
-  content: "\f111";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  display: none;
-  right: -6px;
-  transform: translatey(-50%);
-}
-.player_main__bar:hover .player_main__reproduced::after {
-  display: block;
-}
-.player_main__bar:hover .player_main__reproduced {
-  border: 2px solid lightgreen;
-}
-.player_main__bar:hover {
-  cursor: pointer;
 }
 /* Player secondary */
 .player_secondary {
@@ -352,34 +355,11 @@ footer a i:hover {
 .player_secondary i {
   margin: 0 5px;
 }
-.player_secondary__audio {
+.player_secondary .ext_bar {
   width: 40%;
-  border-radius: 2px;
-  background-color: #5A5A5A;
 }
-.player_secondary__reproduced_audio {
+.player_secondary .int_bar {
   width: 30%;
-  border: 2px solid lightgrey;
-  border-radius: 2px;
-  position: relative;
-}
-.player_secondary__reproduced_audio::after {
-  content: "\f111";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  display: none;
-  right: -6px;
-  transform: translatey(-50%);
-}
-.player_secondary__audio:hover .player_secondary__reproduced_audio::after {
-  display: block;
-}
-.player_secondary__audio:hover .player_secondary__reproduced_audio {
-  border: 2px solid lightgreen;
-}
-.player_secondary__audio:hover {
-  cursor: pointer;
 }
 /* /FOOTER */
 
